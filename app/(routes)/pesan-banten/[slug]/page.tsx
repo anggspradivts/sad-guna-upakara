@@ -5,8 +5,8 @@ import { dataBanten } from "@/app/data/bantenData";
 import clsx from "clsx";
 import { ImageIcon, SquareCheck, SquareX } from "lucide-react";
 import Image from "next/image";
-import { useParams, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
+import { useState } from "react";
 
 const BantenSlug = () => {
   const params = useParams();
@@ -24,10 +24,6 @@ const BantenSlug = () => {
         : [name]
     );
   };
-
-  // useEffect(() => {
-  //   console.log(notIncludedData);
-  // }, [notIncludedData]);
 
   if (!findData) {
     return <div>not found</div>;
