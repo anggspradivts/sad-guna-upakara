@@ -12,7 +12,7 @@ const BantenSlug = () => {
   const params = useParams();
   const slug = params.slug;
 
-  const [notIncludedData, setNotIncludedData] = useState<any[] | null>(null);
+  const [notIncludedData, setNotIncludedData] = useState<string[] | null>(null);
   const findData = dataBanten.find((item) => item.slug === slug);
 
   const handleNotIncludedData = (name: string) => {
