@@ -33,8 +33,8 @@ export const dataBanten = [
     ]
   },
   {
-    name: "Angga",
-    slug: "angga",
+    name: "Rio",
+    slug: "rio",
     img: "",
     description: "",
     components: [
