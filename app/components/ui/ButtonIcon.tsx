@@ -1,4 +1,4 @@
-import { Component, ComponentType, ElementType } from "react";
+import { ComponentType } from "react";
 
 interface ButtonIconComponentProps {
   icon: ComponentType;
