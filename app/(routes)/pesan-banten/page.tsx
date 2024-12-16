@@ -44,6 +44,7 @@ const PesanBantenPage = () => {
         <div className="flex justify-center items-center">
           {dataBanten.length >= viewBanten && (
             <Button
+              variant="normal"
               text={"Lihat lebih"}
               onClick={() => setViewBanten((prev) => prev + 10)}
             />
