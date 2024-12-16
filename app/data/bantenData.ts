@@ -13,7 +13,7 @@ export const dataBanten = [
   {
     name: "Kwangen",
     slug: "kwangen",
-    img: "",
+    img: "kwangen.jpg",
     description: "",
     components: [
       { name: "component 1", img: "" },
@@ -34,8 +34,8 @@ export const dataBanten = [
   },
   {
     name: "Rio",
-    slug: "rio",
-    img: "",
+    slug: "rio_jomok",
+    img: "rio.jpg",
     description: "",
     components: [
       { name: "component 1", img: "" },
@@ -134,7 +134,7 @@ export const dataBanten = [
   {
     name: "Canang Ceper",
     slug: "canang_ceper",
-    img: "",
+    img: "canang ceper.jpg",
     description: "",
     components: [
       { name: "component 1", img: "" },

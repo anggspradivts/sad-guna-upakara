@@ -20,7 +20,17 @@ const PesanBantenPage = () => {
                 <div className="flex flex-col w-full h-[200px] overflow-hidden rounded-lg border border-slate-300 shadow-md hover:-translate-y-1 transition-all duration-300">
                   <div className="w-full h-4/6 flex  justify-center items-center bg-slate-200 ">
                     {item.img ? (
-                      <Image alt="banten-image" src={item.img} />
+                      <Image
+                        alt="banten-image"
+                        src={`/images/${item.img}`}
+                        width={300}
+                        height={500}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                        }}
+                      />
                     ) : (
                       <ImageIcon />
                     )}
