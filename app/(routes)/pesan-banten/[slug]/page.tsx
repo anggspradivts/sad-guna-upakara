@@ -10,6 +10,7 @@ import { ImageIcon, ShoppingCart, SquareCheck, SquareX } from "lucide-react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useState } from "react";
+import ConfirmOverlay from "./_components/ConfirmOverlay";
 
 const BantenSlug = () => {
   const params = useParams();
@@ -24,6 +25,7 @@ const BantenSlug = () => {
     nama: "",
     alamat: "",
   });
+  const [isShowOverlay, setIsShowOverlay] = useState(false);
 
   if (!findData) return <div>not found</div>;
 
@@ -55,6 +57,12 @@ const BantenSlug = () => {
     const whatsappURL = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_CLIENT}?text=${encodedMessage}&app_absent=0`;
     window.open(whatsappURL, "_blank");
   };
+
+  const confirmData = {
+    name: findData.name,
+    selectedComponents: findData.components.filter((item) => !notIncludedComponents?.includes(item.name)),
+    formData
+  }
 
   return (
     <div className="bg-white text-black rounded-t-3xl p-5 md:px-[80px] lg:px-[250px] pb-20">
@@ -89,14 +97,14 @@ const BantenSlug = () => {
           <p className="italic text-slate-400 text-sm md:text-md">
             Bebas kustumoisasi apakah ingin include item berikut atau tidak
           </p>
-          <div className="flex flex-col space-y-3">
+          <div className="grid gird-cols-1 gap-3">
             {findData.components.map((item, index) => {
               return (
                 <div
                   key={index}
                   onClick={() => handleNotIncludedData(item.name)}
                   className={clsx(
-                    "flex h-[70px] md:h-[130px] w-full border-2 rounded-md transition-all duration-300 overflow-hidden",
+                    "flex h-[70px] md:h-[100px] w-full border-2 rounded-md transition-all duration-300 overflow-hidden",
                     notIncludedComponents?.includes(item.name)
                       ? "border-red-300 translate-x-2"
                       : "border-green-400 shadow-greem-400 shadow-sm"
@@ -116,7 +124,7 @@ const BantenSlug = () => {
                         <ImageIcon />
                       )}
                     </div>
-                    <div className="p-1 md:p-3 flex justify-between">
+                    <div className="w-4/6 text-sm p-1 md:p-3 flex justify-between">
                       {item.name}
                     </div>
                   </div>
@@ -171,9 +179,21 @@ const BantenSlug = () => {
               }))
             }
           />
-          <div className="flex justify-center w-full">
-            <Button text={"Pesan"} type="submit" />
-          </div>
+        <div className="flex justify-center w-full">
+          <Button
+            variant="normal"
+            text={"Pesan"}
+            type="button"
+            onClick={() => setIsShowOverlay(true)}
+          />
+        </div>
+        {isShowOverlay && (
+          <ConfirmOverlay
+            setIsShowOverlay={setIsShowOverlay}
+            confirmData={confirmData}
+            baseData={findData}
+          />
+        )}
         </form>
       </div>
     </div>

@@ -1,200 +1,118 @@
 export const dataBanten = [
   {
-    name: "Pejati",
-    slug: "pejati",
+    name: "Paket Banten Kajeng Kliwon",
+    slug: "paket-banten-kajeng-kliwon",
     img: "",
     description: "",
     components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
+      { name: "Canang Sari", img: "" },
+      { name: "Canang Gede", img: "" },
+      { name: "Segehan", img: "" },
+      { name: "Rarapan laklak tape", img: "" },
+      { name: "Ajuman", img: "" },
+      { name: "Ajuman dampulan", img: "" },
+      { name: "Sarana sembahyang: Kwangen, bunga, dupa", img: "" },
+    ],
   },
   {
-    name: "Kwangen",
-    slug: "kwangen",
-    img: "kwangen.jpg",
-    description: "",
-    components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
-  },
-  {
-    name: "Paket Banten Kliwon",
-    slug: "paket_banten_kliwon",
+    name: "Paket Banten Purnama & Tilem",
+    slug: "paket-banten-purnama-tilem",
     img: "",
     description: "",
     components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
+      { name: "Canang Sari", img: "" },
+      { name: "Canang Gede", img: "" },
+      { name: "Pesucian", img: "" },
+      { name: "Ajuman", img: "" },
+      { name: "Sarana sembahyang: kwangen, bunga, dupa", img: "" },
+    ],
   },
   {
-    name: "Rio",
-    slug: "rio_jomok",
-    img: "rio.jpg",
-    description: "",
-    components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
-  },
-  {
-    name: "Paket Banten Purnama",
-    slug: "paket_banten_purnama",
+    name: "Paket Banten Saraswati",
+    slug: "paket-banten-saraswati",
     img: "",
     description: "",
     components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
+      { name: "Canang Sari", img: "" },
+      { name: "Canang Saraswati", img: "" },
+      { name: "Ajuman", img: "" },
+      { name: "Peras", img: "" },
+      { name: "Daksina", img: "" },
+      { name: "Sarana sembahyang: kwangen, bunga, dupa", img: "" },
+    ],
   },
   {
-    name: "Sarana Persembahyangan",
-    slug: "sarana_persembahyangan",
+    name: "Paket Banten Pagerwesi",
+    slug: "paket-banten-pagerwesi",
     img: "",
     description: "",
     components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
+      { name: "Canang Sari", img: "" },
+      { name: "Sesayut Pagehurip", img: "" },
+      { name: "Tebasan Prayascita", img: "" },
+      { name: "Dapetan", img: "" },
+      { name: "Sarana sembahyang: kwangen, bunga, dupa", img: "" },
+    ],
   },
   {
-    name: "Paket Banten Tilem",
-    slug: "paket_banten_tilem",
+    name: "Paket Banten Sehari-Hari",
+    slug: "paket-banten-sehari-hari",
     img: "",
     description: "",
     components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
+      { name: "Canang Sari", img: "" },
+      { name: "Rarapan Banten", img: "" },
+      { name: "Sarana persembahyangan: Bunga, dupa, kwangen", img: "" },
+    ],
   },
   {
-    name: "Tipat Dampulan",
-    slug: "tipat_dampulan",
+    name: "Paket Banten Tumpek Landep",
+    slug: "paket-banten-tumpek-landep",
     img: "",
     description: "",
     components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
+      { name: "Canang Sari", img: "" },
+      { name: "Canang Gede", img: "" },
+      { name: "Pejati", img: "" },
+      { name: "Pesucian", img: "" },
+      { name: "Peras Penyeneng", img: "" },
+      { name: "Tebasan Pasupati", img: "" },
+      { name: "Segehan", img: "" },
+      { name: "Sarana sembahyang: kwangen, bunga, dupa", img: "" },
+    ],
   },
   {
-    name: "Paket Banten Sehari – Hari",
-    slug: "paket_banten_sehari_hari",
+    name: "Paket Banten Tumpek Wariga",
+    slug: "paket-banten-tumpek-wariga",
     img: "",
     description: "",
     components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
+      { name: "Canang Sari", img: "" },
+      { name: "Bubur Sumsum", img: "" },
+      { name: "Sarana sembahyang: kwangen, bunga, dupa", img: "" },
+    ],
   },
   {
-    name: "Tipat Kelan",
-    slug: "tipat_kelan",
+    name: "Paket Banten Siwaratri",
+    slug: "paket-banten-siwaratri",
     img: "",
     description: "",
     components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
+      { name: "Ajuman", img: "" },
+      { name: "Canang Sari", img: "" },
+      { name: "Pesucian", img: "" },
+      { name: "Sarana sembahyang: kwangen, bunga, dupa", img: "" },
+    ],
   },
   {
-    name: "Canang Sari",
-    slug: "canang_sari",
+    name: "Paket Banten Banyupinaruh",
+    slug: "paket-banten-banyupinaruh",
     img: "",
     description: "",
     components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
+      { name: "Toya Kumkum", img: "" },
+      { name: "Canang Sari", img: "" },
+      { name: "Sarana sembahyang: kwangen, bunga, dupa", img: "" },
+    ],
   },
-  {
-    name: "Canang Sari Gede",
-    slug: "canang_sari_gede",
-    img: "",
-    description: "",
-    components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
-  },
-  {
-    name: "Canang Ceper",
-    slug: "canang_ceper",
-    img: "canang ceper.jpg",
-    description: "",
-    components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
-  },
-  {
-    name: "Ceper Badung",
-    slug: "ceper_badung",
-    img: "",
-    description: "",
-    components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
-  },
-  {
-    name: "Dupa",
-    slug: "dupa",
-    img: "",
-    description: "",
-    components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
-  },
-  {
-    name: "Sampian Gebogan",
-    slug: "sampian_gebogan",
-    img: "",
-    description: "",
-    components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
-  },
-  {
-    name: "Segehan Cenik",
-    slug: "segehan_cenik",
-    img: "",
-    description: "",
-    components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
-  },
-  {
-    name: "Segehan Gede",
-    slug: "segehan_gede",
-    img: "",
-    description: "",
-    components: [
-      { name: "component 1", img: "" },
-      { name: "component 2", img: "" },
-      { name: "component 3", img: "" }
-    ]
-  }
 ];
