@@ -129,7 +129,7 @@ const BantenSlug = () => {
           </div>
         </div>
       </div>
-      <div id="form" className="mt-10 mx-0 md:mx-40">
+      <div id="form" className="mt-10 mx-0 md:mx-20">
         <form action="" className="space-y-3" onSubmit={handleSubmit}>
           <InputForm
             label="Bahan"

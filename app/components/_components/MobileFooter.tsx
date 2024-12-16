@@ -1,10 +1,10 @@
-import { Info, Phone } from "lucide-react";
+import { Home, Info, Phone } from "lucide-react";
 
 const MobileFooter = () => {
   const list = [
     {
       name: "Info",
-      icon: Info,
+      icon: Home,
     },
     {
       name: "Contact",
