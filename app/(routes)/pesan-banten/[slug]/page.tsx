@@ -8,15 +8,13 @@ import { Banten } from "@/types/banten";
 import clsx from "clsx";
 import { ImageIcon, ShoppingCart, SquareCheck, SquareX } from "lucide-react";
 import Image from "next/image";
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import { useState } from "react";
 
 const BantenSlug = () => {
   const params = useParams();
-  const router = useRouter();
   const slug = params.slug;
   const findData: Banten = dataBanten.find((item) => item.slug === slug);
-  if (!findData) return <div>not found</div>;
 
   const [notIncludedComponents, setNotIncludedComponents] = useState<
     string[] | null
@@ -26,6 +24,8 @@ const BantenSlug = () => {
     nama: "",
     alamat: "",
   });
+
+  if (!findData) return <div>not found</div>;
 
   const handleNotIncludedData = (name: string) => {
     setNotIncludedComponents((prev) =>
@@ -41,15 +41,19 @@ const BantenSlug = () => {
     e.preventDefault();
     const form = {
       name: findData.name,
-      components: findData.components.filter(
-        (item) => !notIncludedComponents?.includes(item.name)
-      ).map((item) => item.name).join(", "),
+      components: findData.components
+        .filter((item) => !notIncludedComponents?.includes(item.name))
+        .map((item) => item.name)
+        .join(", "),
     };
-    const whatsappMessage = `Nama: ${formData.nama}, Request bahan: ${formData.bahan ? formData.bahan : "-"}, Alamat: ${formData.alamat}, Pesanan: ${form.name}, sudah include: ${form.components}. `;
+    const whatsappMessage = `Nama: ${formData.nama}, Request bahan: ${
+      formData.bahan ? formData.bahan : "-"
+    }, Alamat: ${formData.alamat}, Pesanan: ${form.name}, sudah include: ${
+      form.components
+    }. `;
     const encodedMessage = encodeURIComponent(whatsappMessage);
     const whatsappURL = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_CLIENT}?text=${encodedMessage}&app_absent=0`;
     window.open(whatsappURL, "_blank");
-    console.log(encodedMessage);
   };
 
   return (
@@ -75,9 +79,7 @@ const BantenSlug = () => {
         <div className="flex justify-between items-center">
           <HeaderComponent text={findData.name} />
           <div>
-            <button
-            // onClick={() => handleAddToCart("Keranjang", findData.slug)}
-            >
+            <button>
               <ShoppingCart />
             </button>
           </div>
@@ -114,7 +116,9 @@ const BantenSlug = () => {
                         <ImageIcon />
                       )}
                     </div>
-                    <div className="p-1 md:p-3 flex justify-between">{item.name}</div>
+                    <div className="p-1 md:p-3 flex justify-between">
+                      {item.name}
+                    </div>
                   </div>
                   <div className="">
                     {notIncludedComponents?.includes(item.name) ? (
