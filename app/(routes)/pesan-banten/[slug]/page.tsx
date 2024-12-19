@@ -60,9 +60,11 @@ const BantenSlug = () => {
 
   const confirmData = {
     name: findData.name,
-    selectedComponents: findData.components.filter((item) => !notIncludedComponents?.includes(item.name)),
-    formData
-  }
+    selectedComponents: findData.components.filter(
+      (item) => !notIncludedComponents?.includes(item.name)
+    ),
+    formData,
+  };
 
   return (
     <div className="bg-white text-black rounded-t-3xl p-5 md:px-[80px] lg:px-[250px] pb-20">
@@ -93,10 +95,16 @@ const BantenSlug = () => {
           </div>
         </div>
         <div className="space-y-3">
-          <p className="font-bold italic">Sudah include item berikut:</p>
-          <p className="italic text-slate-400 text-sm md:text-md">
-            Bebas kustumoisasi apakah ingin include item berikut atau tidak
-          </p>
+          <p className="font-bold italic">Deskripsi</p>
+          <p>{findData.description}</p>
+          {findData.components.length > 1 && (
+            <>
+              <p className="font-bold italic">Sudah include item berikut:</p>
+              <p className="italic text-slate-400 text-sm md:text-md">
+                Bebas kustumoisasi apakah ingin include item berikut atau tidak
+              </p>
+            </>
+          )}
           <div className="grid gird-cols-1 gap-3">
             {findData.components.map((item, index) => {
               return (
@@ -115,7 +123,7 @@ const BantenSlug = () => {
                       {item.img ? (
                         <Image
                           alt="komponen-image"
-                          src={`/${item.img}`}
+                          src={`/images/${item.img}`}
                           width={500}
                           height={500}
                           className="w-full h-full object-cover"
@@ -179,21 +187,21 @@ const BantenSlug = () => {
               }))
             }
           />
-        <div className="flex justify-center w-full">
-          <Button
-            variant="normal"
-            text={"Pesan"}
-            type="button"
-            onClick={() => setIsShowOverlay(true)}
-          />
-        </div>
-        {isShowOverlay && (
-          <ConfirmOverlay
-            setIsShowOverlay={setIsShowOverlay}
-            confirmData={confirmData}
-            baseData={findData}
-          />
-        )}
+          <div className="flex justify-center w-full">
+            <Button
+              variant="normal"
+              text={"Pesan"}
+              type="button"
+              onClick={() => setIsShowOverlay(true)}
+            />
+          </div>
+          {isShowOverlay && (
+            <ConfirmOverlay
+              setIsShowOverlay={setIsShowOverlay}
+              confirmData={confirmData}
+              baseData={findData}
+            />
+          )}
         </form>
       </div>
     </div>

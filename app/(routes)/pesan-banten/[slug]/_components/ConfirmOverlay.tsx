@@ -1,21 +1,11 @@
 import Button from "@/app/components/ui/Button";
+import { Struk } from "@/types/type";
 import { CheckSquare, X } from "lucide-react";
 import { SetStateAction } from "react";
 
 interface ConfirmOverlayProps {
   setIsShowOverlay: React.Dispatch<SetStateAction<boolean>>;
-  confirmData: {
-    name: string;
-    selectedComponents: {
-      name: string;
-      img: string;
-    }[];
-    formData: {
-      bahan: string;
-      nama: string;
-      alamat: string;
-    };
-  };
+  confirmData: Struk
   baseData: {
     name: string;
     slug: string;
@@ -32,9 +22,8 @@ const ConfirmOverlay = ({
   confirmData,
   baseData,
 }: ConfirmOverlayProps) => {
-  console.log(confirmData);
   return (
-    <div className="bg-black bg-opacity-20 fixed inset-0 flex justify-center items-center ">
+    <div className="bg-black bg-opacity-20 fixed inset-0 flex justify-center items-center z-[9999]">
       <div className="w-5/6 h-4/6 md:w-4/6 md:h-4/6 bg-white rounded-lg p-3 px-8 md:px-10 relative">
         <div className="flex justify-center py-5 md:py-10 font-bold text-lg md:text-2xl w-full text-black">
           <h1>Konfirmasi Pesanan</h1>
