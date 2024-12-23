@@ -22,7 +22,7 @@ const PesanBantenPage = () => {
                     {item.img ? (
                       <Image
                         alt="banten-image"
-                        src={`/images/${item.img}`}
+                        src={`/svg/${item.img}`}
                         width={300}
                         height={500}
                         style={{

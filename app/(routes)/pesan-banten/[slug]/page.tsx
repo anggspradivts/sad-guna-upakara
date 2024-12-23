@@ -73,7 +73,7 @@ const BantenSlug = () => {
           {findData.img ? (
             <Image
               alt="banten-image"
-              src={`/images/${findData.img}`}
+              src={`/svg/${findData.img}`}
               width={500}
               height={500}
               style={{
