@@ -29,7 +29,7 @@ const MobileFooter = () => {
 
   return (
     <div className="bg-transparent fixed flex justify-center p-2 w-full bottom-0 right-0 z-[9999] h-[70px]">
-      <div className=" bg-green-400 rounded-full w-full h-full grid grid-cols-4 shadow-2xl">
+      <div className=" bg-[var(--main)] rounded-full w-full h-full grid grid-cols-4 shadow-2xl">
         {list.map((item, index) => {
           const Icon = item.icon;
           return (

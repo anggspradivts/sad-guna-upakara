@@ -13,7 +13,7 @@ const Button = ({ text, onClick, type, variant }: ButtonProps) => {
       type={type}
       className={clsx(
         "md:w-20 lg:w-40 p-2 text-center  text-white rounded-md shadow-sm ",
-        variant === "normal" && "bg-green-400 shadow-green-400",
+        variant === "normal" && "bg-[var(--main)] shadow-[var(--main)]",
         variant === "danger" && "bg-red-400 shadow-red-400"
       )}
     >

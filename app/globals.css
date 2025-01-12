@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --main: #FFB200;
 }
 
 @media (prefers-color-scheme: light) {
@@ -16,6 +17,6 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--main);
   font-family: Arial, Helvetica, sans-serif;
 }
