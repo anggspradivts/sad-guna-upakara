@@ -20,7 +20,7 @@ export const dataBanten = [
     "img": "",
     "description": "",
     "components": [
-      { "name": "Canang Sari", "img": "Canang sari.jpg" },
+      { "name": "Canang Sari", "img": "Canang Sari.jpg" },
       { "name": "Canang Gede", "img": "Canang gede.jpg" },
       { "name": "Pesucian", "img": "Pesucian.jpg" },
       { "name": "Ajuman", "img": "Ajuman.jpg" },
@@ -33,7 +33,7 @@ export const dataBanten = [
     "img": "",
     "description": "",
     "components": [
-      { "name": "Canang Sari", "img": "Canang sari.jpg" },
+      { "name": "Canang Sari", "img": "Canang Sari.jpg" },
       { "name": "Canang Saraswati", "img": "Canang Saraswati.jpg" },
       { "name": "Ajuman", "img": "Ajuman.jpg" },
       { "name": "Peras", "img": "" },
@@ -47,7 +47,7 @@ export const dataBanten = [
     "img": "",
     "description": "",
     "components": [
-      { "name": "Canang Sari", "img": "Canang sari.jpg" },
+      { "name": "Canang Sari", "img": "Canang Sari.jpg" },
       { "name": "Sesayut Pagehurip", "img": "" },
       { "name": "Tebasan Prayascita", "img": "prasita.jpg" },
       { "name": "Dapetan", "img": "" },
@@ -60,7 +60,7 @@ export const dataBanten = [
     "img": "",
     "description": "",
     "components": [
-      { "name": "Canang Sari", "img": "Canang sari.jpg" },
+      { "name": "Canang Sari", "img": "Canang Sari.jpg" },
       { "name": "Rarapan Banten", "img": "Rarapan banten.jpg" },
       { "name": "Sarana persembahyangan: Bunga, dupa, kwangen", "img": "kwangen.jpg" }
     ]
@@ -71,7 +71,7 @@ export const dataBanten = [
     "img": "",
     "description": "",
     "components": [
-      { "name": "Canang Sari", "img": "Canang sari.jpg" },
+      { "name": "Canang Sari", "img": "Canang Sari.jpg" },
       { "name": "Canang Gede", "img": "Canang gede.jpg" },
       { "name": "Pejati", "img": "" },
       { "name": "Pesucian", "img": "Pesucian.jpg" },
@@ -87,7 +87,7 @@ export const dataBanten = [
     "img": "",
     "description": "",
     "components": [
-      { "name": "Canang Sari", "img": "Canang sari.jpg" },
+      { "name": "Canang Sari", "img": "Canang Sari.jpg" },
       { "name": "Bubur Sumsum", "img": "" },
       { "name": "Sarana sembahyang: kwangen, bunga, dupa", "img": "kwangen.jpg" }
     ]
@@ -99,7 +99,7 @@ export const dataBanten = [
     "description": "",
     "components": [
       { "name": "Ajuman", "img": "Ajuman.jpg" },
-      { "name": "Canang Sari", "img": "Canang sari.jpg" },
+      { "name": "Canang Sari", "img": "Canang Sari.jpg" },
       { "name": "Pesucian", "img": "Pesucian.jpg" },
       { "name": "Sarana sembahyang: kwangen, bunga, dupa", "img": "kwangen.jpg" }
     ]
@@ -216,7 +216,7 @@ export const dataBanten = [
   {
     "name": "Dupa",
     "slug": "dupa",
-    "img": "dupa.jpg",
+    "img": "Dupa.jpg",
     "description": "Tidak ada yang special.",
     "components": []
   },
