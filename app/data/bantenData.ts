@@ -9,7 +9,7 @@ export const dataBanten = [
       { "name": "Canang Gede", "img": "Canang gede.jpg" },
       { "name": "Segehan", "img": "paket_segehan.jpg" },
       { "name": "Rarapan laklak tape", "img": "rarapanLaklakTape.jpg" },
-      { "name": "Ajuman", "img": "ajuman.jpg" },
+      { "name": "Ajuman", "img": "Ajuman.jpg" },
       { "name": "Ajuman dampulan", "img": "" },
       { "name": "Sarana sembahyang: Kwangen, bunga, dupa", "img": "kwangen.jpg" }
     ]
@@ -22,7 +22,7 @@ export const dataBanten = [
     "components": [
       { "name": "Canang Sari", "img": "Canang Sari.jpg" },
       { "name": "Canang Gede", "img": "Canang gede.jpg" },
-      { "name": "Pesucian", "img": "Pesucian.jpg" },
+      { "name": "Pesucian", "img": "" },
       { "name": "Ajuman", "img": "Ajuman.jpg" },
       { "name": "Sarana sembahyang: kwangen, bunga, dupa", "img": "kwangen.jpg" }
     ]
@@ -74,7 +74,7 @@ export const dataBanten = [
       { "name": "Canang Sari", "img": "Canang Sari.jpg" },
       { "name": "Canang Gede", "img": "Canang gede.jpg" },
       { "name": "Pejati", "img": "" },
-      { "name": "Pesucian", "img": "Pesucian.jpg" },
+      { "name": "Pesucian", "img": "" },
       { "name": "Peras Penyeneng", "img": "" },
       { "name": "Tebasan Pasupati", "img": "" },
       { "name": "Segehan", "img": "paket_segehan.jpg" },
@@ -100,7 +100,7 @@ export const dataBanten = [
     "components": [
       { "name": "Ajuman", "img": "Ajuman.jpg" },
       { "name": "Canang Sari", "img": "Canang Sari.jpg" },
-      { "name": "Pesucian", "img": "Pesucian.jpg" },
+      { "name": "Pesucian", "img": "" },
       { "name": "Sarana sembahyang: kwangen, bunga, dupa", "img": "kwangen.jpg" }
     ]
   },
